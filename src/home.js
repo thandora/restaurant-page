@@ -1,11 +1,11 @@
-import restaurantImg from "./restaurant.png";
+import restaurantImg from "./images/restaurant.png";
 
 const logo = document.createElement("img");
 logo.src = restaurantImg;
 
 const logoAttrib = document.createElement("a");
-logoAttrib.setAttribute("href", "https://www.flaticon.com/free-icons/restaurant");
-logoAttrib.setAttribute("title", "restaurant icons");
+logoAttrib.href = "https://www.flaticon.com/free-icons/restaurant";
+logoAttrib.title = "restaurant icons";
 logoAttrib.textContent = "Icon by Eucalyp - Flaticon";
 
 const logoContainer = document.createElement("div");
