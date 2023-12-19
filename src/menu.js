@@ -36,7 +36,7 @@ const menu = document.createElement("div");
 menu.classList.add("menu");
 
 // Menu
-const apple = createMenuItem("Apple Smith", 2.55, "A is for Apple", imgApple);
+const apple = createMenuItem("Apple not Smith", 2.55, "A is for Apple", imgApple);
 
 const orange = createMenuItem(
   "Not the Color Orange",

@@ -25,14 +25,15 @@ body {
 .navbar {
   padding: 8px 12%;
   height: 60px;
-  width: 100vw;
-  margin-bottom: 25px;
+  width: 100%;
+  margin-bottom: 80px;
   border-bottom: 2px solid #454641;
   display: flex;
   align-items: center;
 }
 
 .navbar a {
+  cursor: pointer;
   padding: 10px 25px;
   font-weight: 900;
   display: flex;
@@ -56,6 +57,12 @@ body {
   column-gap: 40px;
 }
 
+.navbar .active {
+  background-color: #f2f2f2;
+  color: #30312b;
+  border-radius: 5px;
+}
+
 /* Homepage (home.js) */
 .homepage {
   display: flex;
@@ -70,6 +77,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.logo-container a {
+  text-decoration: none;
+  color: #fcffe5;
 }
 
 .homepage img {
@@ -118,7 +130,6 @@ body {
 .menu .item .price {
   margin: 0;
   margin-top: 4px;
-  width: calc(min-content + 10px);
 }
 
 .menu .name {
