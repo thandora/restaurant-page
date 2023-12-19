@@ -8,10 +8,52 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  background-color: #30312b;
+  color: #fcffe5;
+}
+
+/* Main page */
 #content {
   font-size: 1.2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  padding: 8px 12%;
+  height: 60px;
+  width: 100vw;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #454641;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  padding: 10px 25px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  color: #fcffe5;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.navbar a:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.navbar .logo {
+  margin-right: auto;
+}
+
+.navbar .nav-links {
+  display: flex;
+  column-gap: 40px;
 }
 
 /* Homepage (home.js) */
@@ -31,8 +73,11 @@ html {
 }
 
 .homepage img {
+  background-color: #ff8c00;
   width: 250px;
   height: 250px;
+  padding: 12px;
+  border-radius: 12px;
 }
 
 .homepage p {
@@ -47,7 +92,11 @@ html {
 }
 
 .menu .item {
-  background-color: rgb(163, 187, 143);
+  width: 450px;
+  padding: 4px;
+  font-size: 1rem;
+  background-color: #ff8c00;
+  color: #30312b;
   display: flex;
   column-gap: 10px;
   border-radius: 12px;
@@ -61,7 +110,6 @@ html {
 
 .menu .item img {
   padding: 8px;
-  background-color: rgb(74, 74, 80);
   width: 150px;
   height: 150px;
   border-radius: 12px;
@@ -74,6 +122,11 @@ html {
 }
 
 .menu .name {
-  font-size: 1.2rem;
-  color: rgb(156, 20, 20);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.menu .name,
+.menu .description {
+  padding-right: 12px;
 }
